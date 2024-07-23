@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="login">
+        <div class="right-login">
+            <h1>Create an Account</h1>
+            <p>Already have an account? <a href="login.php">Login</a></p>
+            <form action="register.php" method="post">
+                <div>
+                    <label id="FirstName" for="FirstName">First Name</label>
+                    <input type="text" name="FirstName" id="FirstName" required>
+                </div>
+                <div>
+                    <label id="FirstName" for="LastName">Last Name</label>
+                    <input type="text" name="LastName" id="LastName" required>
+                </div>
+                <div>
+                    <label id="email" for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Or sign up with</p>
+            <div>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+        </div>
+        <div class="left-login">
+            <img src="img/login.jpg" alt="">
+    </div>
+</body>
+</html>
