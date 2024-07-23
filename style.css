@@ -1,2 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: poppins;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    background: #EEEDEB;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login h1 {
+    text-align: left;
+    color: #333;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login form div {
+    margin-bottom: 15px;
+}
+
+.login form input[type="text"],
+.login form input[type="email"],
+.login form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login form button {
+    background-color: #2F3645;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .login form button:hover {
+    background-color: #DEAC80;
+} */
+
+.shortcuts {
+    display: flex;
+    justify-content: center;
+}
+
+.shortcuts i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+a {
+    color: #914F1E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.left-login img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px 0 0 8px; /* Optional: adds rounded corners on the left side */
+}
+
+.left-login, .right-login {
+    flex: 1; /* Adjust this value if you want one side to be larger than the other */
+}
+
+.left-login, .right-login {
+    padding: 20px;
+}
+
+
+.signupoptions .shortcuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* General style for all shortcut links */
+.shortcuts a {
+    display: inline-block; /* Allows applying padding, margin, and border */
+    border: 2px solid transparent; /* Default border, color changes on specific classes */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Space inside the border */
+    margin: 5px; /* Space outside the border */
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific style for the Google shortcut */
+.shortcuts a .fab.fa-google {
+    border-color: #4285F4; /* Google's brand color */
+}
+
+/* Specific style for the Apple shortcut */
+.shortcuts a .fab.fa-apple {
+    border-color: #000; /* Apple's brand color is black */
+}
+
+/* Hover effect for both shortcuts */
+.shortcuts a:hover {
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
+    border-color: #939185; /* Changes border color on hover */
+    background-color: #2F3645;
+    color: white;
+}
