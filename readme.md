@@ -6,7 +6,7 @@ This repository contains the code for a login page website.
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/LoginPageWebsite.git`
+1. Clone the repository: `git clone https://github.com/NateKonigkrame214/LoginPageWebsite.git`
 2. Navigate to the project directory: `cd LoginPageWebsite`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
