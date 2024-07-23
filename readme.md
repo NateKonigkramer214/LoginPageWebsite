@@ -2,6 +2,8 @@
 
 This repository contains the code for a login page website.
 
+<img alt="projects" src="img\loginpage1.png">
+
 ## Installation
 
 To run this project locally, follow these steps:
@@ -15,12 +17,6 @@ To run this project locally, follow these steps:
 
 Once the development server is running, you can access the login page by opening your web browser and navigating to `http://localhost:3000`.
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
 ## License
-
-<img alt="projects" src="img\loginpage1.png">
 
 This project is licensed under the [MIT License](LICENSE).
