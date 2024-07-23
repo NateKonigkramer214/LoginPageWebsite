@@ -3,23 +3,28 @@
 body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif; /* Corrected font-family */
     background-color: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* grid-template-columns: 1fr 1fr; */ /* This line should be removed or commented out */
 }
+
 
 .login {
     width: 100%;
-    max-width: 400px;
+    max-width: 900px;
+    align-items: center;
+    display: flex;
     background: #EEEDEB;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 30px; /* Corrected value */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .login h1 {
     text-align: left;
@@ -76,18 +81,9 @@ a:hover {
     text-decoration: underline;
 }
 
-.left-login img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    border-radius: 8px 0 0 8px; /* Optional: adds rounded corners on the left side */
-}
-
 .left-login, .right-login {
-    flex: 1; /* Adjust this value if you want one side to be larger than the other */
-}
-
-.left-login, .right-login {
-    padding: 20px;
+    flex: 1; /* Allows both children to grow equally */
+    padding: 20px; /* Adds some padding inside both children */
 }
 
 
@@ -108,6 +104,7 @@ a:hover {
     text-decoration: none; /* Removes underline from links */
     color: inherit; /* Inherits text color from parent */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
 }
 
 /* Specific style for the Google shortcut */
@@ -126,4 +123,40 @@ a:hover {
     border-color: #939185; /* Changes border color on hover */
     background-color: #2F3645;
     color: white;
+}
+
+/* Responsive adjustments for the image */
+.left-login img {
+    height: auto;
+    border-radius: 15px;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .shortcuts a {
+        padding: 0.5rem; /* Smaller padding */
+        margin: 0.25rem; /* Smaller margin */
+        font-size: 0.75rem; /* Smaller font size */
+    }
+
+    .left-login, .right-login {
+        flex: 1 1 100%; /* Take full width on smaller screens */
+        padding: 10px;
+    }
+
+    .login {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+    .shortcuts a {
+        padding: 0.4rem;
+        margin: 0.2rem;
+        font-size: 0.7rem; /* Even smaller font size */
+    }
 }
